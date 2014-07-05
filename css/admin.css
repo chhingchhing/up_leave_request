@@ -1,0 +1,31 @@
+/*Success message*/
+/*div#feedback_bar {*/
+div.success_message {
+    background: none repeat scroll 0 0 #E3FFE3;
+    border: 1px solid #5FDF5F;
+    border-radius: 4px;
+    color: #008000;
+    padding: 15px 10px;
+    position: absolute;
+    right: 30%;
+    top: 75%;
+    z-index: 1;
+}
+
+/*Error message*/
+/*div#feedback_bar_error {*/
+div.error_message {
+    background: none repeat scroll 0 0 #FFD7D7;
+    border: 1px solid #FF9A9A;
+    border-radius: 4px;
+    color: #FF0000;
+    padding: 15px 10px;
+    position: absolute;
+    top: 30%;
+}
+
+#feedback_bar_close:hover {
+    cursor: pointer;
+}
+
+/* End of Message */
