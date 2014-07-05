@@ -5,6 +5,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="<?php echo base_url(); ?>">UP Take Leave</a>
+    <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo img("images/cg-logo.png"); ?></a>
 </div>
 <!-- /.navbar-header -->

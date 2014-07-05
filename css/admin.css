@@ -28,4 +28,34 @@ div.error_message {
     cursor: pointer;
 }
 
+.header {
+    background-color: #5cb85c;
+    clear: both;
+    padding: 10px 10px 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer {
+    background-color: #5cb85c;
+    color: #ffffff;
+    padding: 10px 10px 5px;
+}
+
+.dashboard > h1 {
+    text-align: center;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+}
+
+h1.page-header {
+    text-align: center;
+}
+
+.navbar-fixed-top {
+    background-color: #5cb85c;
+}
+
 /* End of Message */
