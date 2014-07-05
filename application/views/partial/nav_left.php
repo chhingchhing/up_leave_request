@@ -45,8 +45,24 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
+            <!-- start of take leave-->
             <li>
-                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Appending Leave</a>
+                <a href="#" class="nav-left-9"><i class="fa fa-book fa-fw"></i> Take Leave<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <?php echo anchor("takeleaves/", ' List', array('class' => 'theTooltip glyphicon glyphicon-list', 'title' => 'View List', "data-toggle"=>"tooltip", "data-placement"=>"top")); ?>
+                    </li>
+                    <li>
+                        <?php echo anchor("takeleaves/create", ' Create', array('class' => 'theTooltip glyphicon glyphicon-plus-sign', 'title' => 'Create', "data-toggle"=>"tooltip", "data-placement"=>"top")); ?>
+                    </li>
+                    <li>
+                        <?php echo anchor("takeleaves/remove", ' Remove', array('class' => 'theTooltip glyphicon glyphicon-remove remove', 'title' => 'Remove', "data-toggle"=>"tooltip", "data-placement"=>"top")); ?>
+                    </li>
+                </ul>
+            </li>
+            <!-- the end of take leave -->
+            <li>
+                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Appending Leave (5)</a>
             </li>
             <li>
                 <a href="#" class="nav-left-9"><i class="fa fa-wrench fa-fw"></i> Approval Leave<span class="fa arrow"></span></a>
@@ -63,6 +79,7 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
+            
             <!-- <li> -->
                 <!-- <a href="#"  class="nav-left-9"><i class="fa fa-sitemap fa-fw"></i> Videos<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
