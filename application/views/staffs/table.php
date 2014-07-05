@@ -10,7 +10,8 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    DataTables Advanced Tables
+                    <i class="fa fa-users fa-fw"></i>
+                    <?php echo ucfirst($controller_name); ?>
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">

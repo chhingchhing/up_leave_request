@@ -10,7 +10,8 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    DataTables Advanced Tables
+                    <i class="fa fa-th-list fa-fw"></i>
+                    <?php echo ucfirst($controller_name); ?>
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
@@ -45,7 +46,7 @@
                                         <td><?php echo $row['department_name']; ?></td>
                                         <td><?php echo $row['description']; ?></td>
                                         <td>
-                                            <?php echo anchor("$controller_name/view/".$row['department_id'], ' ', array('class' => 'theTooltip glyphicon glyphicon-eye-open', 'title' => 'View', "data-toggle"=>"tooltip", "data-placement"=>"top")); ?> | 
+                                            <?php // echo anchor("$controller_name/view/".$row['department_id'], ' ', array('class' => 'theTooltip glyphicon glyphicon-eye-open', 'title' => 'View', "data-toggle"=>"tooltip", "data-placement"=>"top")); ?> <!-- | --> 
                                             <?php echo anchor("$controller_name/edit/".$row['department_id'], ' ', array('class' => 'theTooltip glyphicon glyphicon-edit', 'title' => 'Edit')); ?> | 
                                             <?php echo anchor("$controller_name/delete/".$row['department_id'], ' ', array('class' => 'theTooltip glyphicon glyphicon-remove delete', 'title' => 'Delete')); ?>
                                         </td> 

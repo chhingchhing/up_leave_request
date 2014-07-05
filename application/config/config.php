@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/Ratha/up_leave_request/';
+$config['base_url']	= 'http://localhost/up_leave_request/';
 
 /*
 |--------------------------------------------------------------------------

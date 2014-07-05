@@ -15,14 +15,14 @@ class Employees extends Security
 
 	public function index()
 	{
-		$datas['title'] = "Departments Management";
+		$datas['title'] = "Employees Management";
 		$datas['controller_name'] = strtolower(get_class());
         $datas['employees'] = $this->Employee->get_all();
 		$this->load->view("staffs/index", $datas);
 	}
 
 	public function edit($user_id) {
-		$datas['title'] = "Edit User";
+		$datas['title'] = "Edit Employee";
 		$datas['controller_name'] = strtolower(get_class());
         $datas['user_info'] = $this->Employee->get_info($user_id);
         $datas['position'] = array();
@@ -56,7 +56,7 @@ class Employees extends Security
 	}
 
 	public function create() {
-		$datas['title'] = "New User";
+		$datas['title'] = "New Employee";
 		$datas['controller_name'] = strtolower(get_class());
 		$positions = array('' => '-- Select --');
         foreach($this->Position->get_all()->result_array() as $row)
@@ -149,9 +149,12 @@ class Employees extends Security
         }
     }
 
-	public function view() {
+	public function view($user_id) {
 		$datas['title'] = "View Details";
 		$datas['controller_name'] = strtolower(get_class());
+
+        $datas['user_info'] = $this->Employee->get_info($user_id);
+
 		$this->load->view("staffs/view", $datas);
 	}
 

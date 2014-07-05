@@ -10,14 +10,14 @@ class Departments extends CI_Controller
 
 	public function index()
 	{
-		$datas['title'] = "Users Management";
+		$datas['title'] = "Departments Management";
 		$datas['controller_name'] = strtolower(get_class());
         $datas['records'] = $this->Department->get_all();
 		$this->load->view("departments/index", $datas);
 	}
 
 	public function edit($department_id) {
-		$datas['title'] = "Edit User";
+		$datas['title'] = "Edit Department";
 		$datas['controller_name'] = strtolower(get_class());
         $datas['record_info'] = $this->Department->get_info($department_id);
 
@@ -25,7 +25,7 @@ class Departments extends CI_Controller
 	}
 
 	public function create($department_id = -1) {
-		$datas['title'] = "New Departments";
+		$datas['title'] = "New Department";
 		$datas['controller_name'] = strtolower(get_class());
 		$datas['record_info'] = $this->Department->get_info($department_id);
 
