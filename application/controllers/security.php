@@ -3,7 +3,7 @@
 /**
 * Security area before using this application
 */
-class Security extends CI_Controller
+class Security extends UP_Controller
 {
 	
 	function __construct()

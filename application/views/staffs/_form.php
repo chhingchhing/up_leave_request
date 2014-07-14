@@ -1,8 +1,7 @@
 <div class="panel-body">
     <div class="row">
         <div class="col-lg-6">
-            <!-- <form role="form" action="#"> -->
-            <?php echo form_open("$controller_name/save/".$user_info->user_id, array("role" => "form", "id" => "add_update_staff")); ?>
+            <?php echo form_open_multipart("$controller_name/save/".$user_info->user_id, array("role" => "form", "id" => "add_update_staff")); ?>
                 <div class="form-group">
                     <label>First Name</label>
                     <?php 
@@ -88,8 +87,9 @@
                     <?php 
                     $upload_profile = array(
                         "name" => "upload_profile",
-                        "class" => "form-control",
-                        "value" => ''
+                        // "class" => "form-control",
+                        "value" => '',
+                        // "multiple" => "multiple"
                         );
                     echo form_upload($upload_profile);
                     ?>
